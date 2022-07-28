@@ -11,3 +11,17 @@ mongoose.connect(
     useFindAndModify: false,
   }
 );
+
+// Constantes que serão salvas
+const nome = "lobisomem pidão";
+const idade = 24;
+
+// Declare um 'let' com seus novos dados e instancie o seu Schema
+let newData = new userSchema({
+  // Liste aqui os parâmetros do seu Schema e quais dados cada um receberá
+  Nome: nome,
+  Idade: idade,
+});
+
+// Use a função save() para salvar seus dados no DB
+newData.save();
