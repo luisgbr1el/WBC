@@ -1,0 +1,28 @@
+* {
+    font-family: Consolas;
+    font-size: 16pt;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+
+#app {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+#members {
+    padding: 5px;
+}
+
+.title {
+    font-size: 50pt;
+}
