@@ -4,12 +4,13 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(14, 13, 13);
     color: white;
     font-weight: bolder;
+    transition: 2s;
 }
 
-#app {
+.app {
     position: absolute;
     width: 300px;
     height: auto;
@@ -17,12 +18,43 @@ body {
     transform: translate(-50%, -50%);
     left: 50%;
     top: 50%;
+    transition: 2s;
 }
 
 #members {
     padding: 5px;
+    background-color: gainsboro;
+    border: 2px solid gray;
+}
+
+#members:hover {
+    transform: scale(1.09);
+}
+
+#submit {
+    padding: 5px;
+    font-size: 12pt;
+    font-weight: bolder;
+    background-color: gainsboro;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: rgb(175, 173, 173);
+    transform: scale(1.09);
 }
 
 .title {
     font-size: 50pt;
+}
+
+.start {
+    background-color: gainsboro;
+    transition: 2s;
+}
+
+#player {
+    width: 40px;
+    cursor: pointer;
 }

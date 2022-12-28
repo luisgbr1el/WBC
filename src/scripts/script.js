@@ -1,8 +1,20 @@
-//alert("oi");
+app = document.getElementById("app");
+let getPlayer = document.getElementById("members").value;
 
-function a() {
-    window.prompt("Quanto de vida você deseja que rael tenha?");
-    window.prompt("Quanto de vida você tem?");
-    window.prompt("Quantas vidas você tem?");
-    window.location.href = "https://www.youtube.com/watch?v=a3Z7zEc7AXQ"
+function start(player) {
+    player = getPlayer;
+    app.style.display = "none";
+    document.body.classList.add("start");
+    var audio = new Audio('../../assets/new-game.mp3');
+    audio.volume = 0.5;
+    audio.play();
+
+    switch (player) {
+        case 'gakkou':
+            document.body.innerHTML += "<div id='app' class='app'><img id='player' onclick='click()' src='../../assets/gakkou.png'></div>"
+    }
+}
+
+function click() {
+
 }
